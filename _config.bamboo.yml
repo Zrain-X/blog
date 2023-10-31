@@ -34,7 +34,7 @@
 
 # github地址, 头部导航右上角的github链接
 Github: 
-  on: true
+  on: false
   url: https://github.com/yuang01/hexo-theme-bamboo
 
 # 网站logo
