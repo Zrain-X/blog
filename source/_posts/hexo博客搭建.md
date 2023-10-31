@@ -3,7 +3,8 @@ title: hexo博客搭建
 date: 2023-10-19 09:26:17
 swiper: true
 tags: [hexo,blog]
-categories: [技术,笔记]
+categories: 
+    - 技术笔记
 ---
 
 ## 安装

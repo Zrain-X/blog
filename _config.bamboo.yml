@@ -48,7 +48,7 @@ sidebar:
   position: left # left right
   widget_library:
     side_blogger:
-      on: true
+      on: false
       avatar: https://pic2.zhimg.com/80/v2-42b72d5ebee4b8d8aa70d9687effe87b_1440w.webp
       shape: rectangle # circle, rectangle
       url: /about/
@@ -192,16 +192,16 @@ swiper:
   readMoreBtn: true # 阅读更多按钮是否显示
   readMoreBtnBackgroundColor: '' # 阅读更多按钮背景颜色,空字符串则默认使用主题颜色
   bubble: true # 轮播图是否显示气泡,也可以打开底下的花瓣或者雪花特效 sakura（花瓣）: true snow(雪花): true
-  wave: true # 轮播图底下的波浪特效
+  wave: false # 轮播图底下的波浪特效
   # 当没有文章设置swiper: true时候，轮播图会显示以下default默认内容，可自行切换对应内容
-  defaultImg: 'https://pic1.zhimg.com/v2-af3ccef61cf58b1a70765747cc1bbeac_b.jpg' # 图片，没有则随机选取
+  defaultImg: 'https://r2.zran.top/pic/6AavlkeEMk4K0j6DpV9i6xgjiuLxAFnSXk8pjw7T:rE=.jpg' # 图片，没有则随机选取
   defaultVideo: '' # video，min-width:992px show
   defaultVideoLoadingImg: 'https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif' # video loading img -- use .gif img, 视频预加载动画，使用gif图片作为loading，为空则视频没有预加载动画
-  defaultTile: '青墨书晚风' # 标题
-  defaultDesc: ['万般付之一笑，共偕老'] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
-  defaultLeftBtnText: '阅读文档' # 左边按钮文字, 空字符串则不显示
+  defaultTile: '海河不择细流' # 标题
+  defaultDesc: ['当时明月在，曾照彩云归'] #描 述，例如 ['煮酒洗净尘嚣，论知交', '万般付之一笑，共偕老']
+  defaultLeftBtnText: '' # 左边按钮文字, 空字符串则不显示
   defaultLeftBtnLink: 'https://yuang01.gitee.io/2021/02/08/hexo-theme-bamboo-new/' # 左边按钮链接 
-  defaultRightBtnText: '下载主题' # 右边按钮的文字，空字符串则不显示
+  defaultRightBtnText: '' # 右边按钮的文字，空字符串则不显示
   defaultRightBtnLink: 'https://gitee.com/yuang01/hexo-theme-bamboo/repository/archive/dev.zip' # 右边的按钮的链接
   defaultDescTyped: true # defaultDesc文字是否开启打字特效  is typed
   defaultDescTypedSpeed: 100 # defaultDesc 打字速度, typed typeSpeed
@@ -239,7 +239,7 @@ show_count: true
 
 # 打赏功能
 donate:
-  on: true
+  on: false
 donate_message: 你的赏识是我前进的动力
 # 支付宝打赏图片相对路径
 Alipay: 'https://pica.zhimg.com/80/v2-61f99f8dcf899f54cad2a1aa28b21e44_1440w.webp'
@@ -567,7 +567,7 @@ color_scheme:
   # 通用颜色
   common:
     # 主题色
-    theme: 'rgba(66, 185, 133, 0.8)'
+    theme: 'rgba(32,70,94, 0.8)'
     # 主题色块内部的文字颜色
     inner: '#fff'
     # 链接色 a标签
@@ -575,7 +575,7 @@ color_scheme:
     # 首页文章列表的背景颜色, url("http://xxx.png") or red or #000 or rgba() ..
     postListBackground: 'rgba(255,255,255,1)'
     # 首页页面的底部背景颜色，空字符串透明('transparent')，可以是白色('#fff')等颜色, 也可以是图片，例如  'url("https://img11.360buyimg.com/ddimg/jfs/t1/169624/29/16/4603017/5fec2c79Eecbd536a/308b28b82a013cd2.png")'
-    bgFloor: 'url("https://pic2.zhimg.com/80/v2-a90e3e9f544549e244355039b96bd606_1440w.jpg")' # 如果是图片地址，url里面请用双引号
+    bgFloor: 'url("https://r2.zran.top/pic/pic_tTzlyx1VylfJZkdlKuGY7o+tBIkn1CeGmC7B7XERLMw=.jpg")' # 如果是图片地址，url里面请用双引号
     headerMenuBackgroundColor: '' 
     # headerMenuBackgroundColor:头部导航背景颜色, 为空则使用theme主题色, 
     # headerMenuBackgroundColor写法: rgba(268, 264, 269, 0.8) or #42b983 or red or 也可以是渐变颜色 linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%)  or 也可以是url("图片地址")
@@ -604,13 +604,13 @@ color_scheme:
     # 页脚里面的a标签鼠标移入时候的颜色 red or #000 or other color
     aHover: 'orangered' 
     # fish --> 表示页脚游动的鱼儿特效, 鱼儿颜色值使用的是footer.background, 只支持rgba(66, 185, 133, 0.8) 或者 #42b983 或者 red 这三种颜色格式的写法，是格式。
-    fish: true 
+    fish: false 
 
 # 设置网站页脚
 site_footer:
   # 通过layout控制页脚元素的显示和顺序
   # busuanzi是访客数那个,假如说你想在 social和 copyright中间加一个自定义内容, 可以这样写 layout: [social, aaa ,copyright, busuanzi, custom], 然后在下面写上aaa: 'markdown格式', aaa这个名称随便取
-  layout: [social, copyright, busuanzi, custom]
+  layout: [social, busuanzi, custom]
   social:
     # - icon: fas fa-rss
     #   url: /atom.xml
@@ -620,7 +620,8 @@ site_footer:
     #   url: https://github.com/yuang01/hexo-theme-bamboo
     # - icon: fas fa-qq
     #   url: tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1730241541
-  copyright: 'Copyright © 2019 - 2020 <a href="https://github.com/yuang01">yuang01</a> | Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a href="https://github.com/yuang01/theme">Bamboo</a> '
+  # copyright: 'Copyright © 2019 - 2020 <a href="https://github.com/yuang01">yuang01</a> | Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a href="https://github.com/yuang01/theme">Bamboo</a> '
+  copyright: 'Powered by <a href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a href="https://github.com/yuang01/theme">Bamboo</a>'
   custom: # 根据需要自行取消注释，label: 'markdown格式'，会在下面继续增加内容
     # - label: '<br>'
     # - label: '[Hello World](http://baidu.com)'
